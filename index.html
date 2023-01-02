@@ -23,215 +23,14 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/grid.css">
 
-
-
-  <style type="text/css">
-    .snowflake {
-      color: #fff;
-      font-size: 1em;
-      font-family: Arial, sans-serif;
-      text-shadow: 0 0 5px #000;
-    }
-
-    @-webkit-keyframes snowflakes-fall {
-      0% {
-        top: -10%
-      }
-
-      100% {
-        top: 100%
-      }
-    }
-
-    @-webkit-keyframes snowflakes-shake {
-
-      0%,
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-      }
-
-      50% {
-        -webkit-transform: translateX(80px);
-        transform: translateX(80px)
-      }
-    }
-
-    @keyframes snowflakes-fall {
-      0% {
-        top: -10%
-      }
-
-      100% {
-        top: 100%
-      }
-    }
-
-    @keyframes snowflakes-shake {
-
-      0%,
-      100% {
-        transform: translateX(0)
-      }
-
-      50% {
-        transform: translateX(80px)
-      }
-    }
-
-    .snowflake {
-      position: fixed;
-      top: -10%;
-      z-index: 9999;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: default;
-      -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-      -webkit-animation-duration: 10s, 3s;
-      -webkit-animation-timing-function: linear, ease-in-out;
-      -webkit-animation-iteration-count: infinite, infinite;
-      -webkit-animation-play-state: running, running;
-      animation-name: snowflakes-fall, snowflakes-shake;
-      animation-duration: 10s, 3s;
-      animation-timing-function: linear, ease-in-out;
-      animation-iteration-count: infinite, infinite;
-      animation-play-state: running, running
-    }
-
-    .snowflake:nth-of-type(0) {
-      left: 1%;
-      -webkit-animation-delay: 0s, 0s;
-      animation-delay: 0s, 0s
-    }
-
-    .snowflake:nth-of-type(1) {
-      left: 10%;
-      -webkit-animation-delay: 1s, 1s;
-      animation-delay: 1s, 1s
-    }
-
-    .snowflake:nth-of-type(2) {
-      left: 20%;
-      -webkit-animation-delay: 6s, .5s;
-      animation-delay: 6s, .5s
-    }
-
-    .snowflake:nth-of-type(3) {
-      left: 30%;
-      -webkit-animation-delay: 4s, 2s;
-      animation-delay: 4s, 2s
-    }
-
-    .snowflake:nth-of-type(4) {
-      left: 40%;
-      -webkit-animation-delay: 2s, 2s;
-      animation-delay: 2s, 2s
-    }
-
-    .snowflake:nth-of-type(5) {
-      left: 50%;
-      -webkit-animation-delay: 8s, 3s;
-      animation-delay: 8s, 3s
-    }
-
-    .snowflake:nth-of-type(6) {
-      left: 60%;
-      -webkit-animation-delay: 6s, 2s;
-      animation-delay: 6s, 2s
-    }
-
-    .snowflake:nth-of-type(7) {
-      left: 70%;
-      -webkit-animation-delay: 2.5s, 1s;
-      animation-delay: 2.5s, 1s
-    }
-
-    .snowflake:nth-of-type(8) {
-      left: 80%;
-      -webkit-animation-delay: 1s, 0s;
-      animation-delay: 1s, 0s
-    }
-
-    .snowflake:nth-of-type(9) {
-      left: 90%;
-      -webkit-animation-delay: 3s, 1.5s;
-      animation-delay: 3s, 1.5s
-    }
-
-    .snowflake:nth-of-type(10) {
-      left: 25%;
-      -webkit-animation-delay: 2s, 0s;
-      animation-delay: 2s, 0s
-    }
-
-    .snowflake:nth-of-type(11) {
-      left: 65%;
-      -webkit-animation-delay: 4s, 2.5s;
-      animation-delay: 4s, 2.5s
-    }
-  </style>
-  <style type="text/css">
-    * {
-      cursor: url(https://cur.cursors-4u.net/others/oth-7/oth684.cur), auto !important;
-    }
-  </style>
-
-<body onLoad="scrlsts()">
-  </head>
-
-  <div class="bg">
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">
-        ⸸
-      </div>
-      <div class="snowflake">
-        ⸸
-      </div>
-      <div class="snowflake">
-        ⸸
-      </div>
-      <div class="snowflake">
-        ⸸
-      </div>
-      <div class="snowflake">
-        ⸸
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-      <div class="snowflake">
-        ⛧
-      </div>
-    </div>
-
     <body>
       <nav>
         <center><div class="nav-wrapper"></center>
-         
-		  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="nav-container left hide-on-med-and-down">
             <a href="./index.html" class="btn btn-outline-light">Products</a>
 			<a href="./faq/index.html" class="btn btn-outline-light">FAQ</a>
 			<a href="https://skovtools.mysellix.io/" class="btn btn-outline-light">Sellix</a>
             <div class="right">
-              
             </div>
           </ul>
         </div>
@@ -255,17 +54,15 @@
                 </div>
               </div>
               <div class="content">
-                <span class="title">Spotify Premium </span>
+                <span class="title">Product Is Out Of Stock </span>
                 <span class="description">Spotify Premium 3 Months</span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63af2f2562e1a" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">1.50 <span>EUR</span></span>
+                  <span class="price">1.50 <span>USD</span></span>
                 </div>
               </div>
             </a>
           </div>
-          <!-- Copy this -->
-
 
           <div class="grid">
             <a class="card" data-shoppy-product="">
@@ -279,7 +76,7 @@
                 <span class="description">Netflix Premium Ultra HD 4 Screens Monthly AutoPay</span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63acd781140a7" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">4 <span>EUR</span></span>
+                  <span class="price">4 <span>USD</span></span>
                 </div>
               </div>
             </a>
@@ -297,7 +94,7 @@
                 <span class="description">95% Nord Vpn Premium Yearly</span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63af2f52be107" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">1.50 <span>EUR</span></span>
+                  <span class="price">1.50 <span>USD</span></span>
                 </div>
               </div>
             </a>
@@ -315,12 +112,11 @@
                 <span class="description">‎Plex TV 80% Lifetime & Yearly </span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63af35bfbfc3b" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">2.50 <span>EUR</span></span>
+                  <span class="price">2.50 <span>USD</span></span>
                 </div>
               </div>
             </a>
           </div>
-		  
 		  
 		   <div class="grid">
             <a class="card" data-shoppy-product="">
@@ -334,7 +130,7 @@
                 <span class="description">‎ </span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63af2fc4cc803" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">1 <span>EUR</span></span>
+                  <span class="price">1 <span>USD</span></span>
                 </div>
               </div>
             </a>
@@ -352,13 +148,12 @@
                 <span class="description">‎ </span>
                 <div class="card-footer">
                   <button class="button style3 fit" data-sellix-product="63af301de7889" type="submit" alt="Buy Now">Buy</button>
-                  <span class="price">1 <span>EUR</span></span>
+                  <span class="price">1 <span>USD</span></span>
                 </div>
               </div>
             </a>
           </div>
 	
- 
       <a class="discord" href="https://discord.gg/P5fckAxvvv" target="_blank">
         <img src="images/discord.png">
       </a>
